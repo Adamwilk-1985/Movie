@@ -1,6 +1,6 @@
 package com;
 
-public class Staff {
+public abstract class Staff {
     String firstName;
     String lastName;
     double payment;
@@ -37,10 +37,9 @@ public class Staff {
     }
 
     public double getPayment() {
+
         return payment;
     }
 
-    public void setPayment(double payment) {
-        this.payment = payment;
-    }
+    public abstract void setPayment(double payment);
 }
